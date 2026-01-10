@@ -101,7 +101,20 @@ class LauncherApp {
         preload: path.join(__dirname, '../../preload/index.js'),
         nodeIntegration: false,
         contextIsolation: true,
+        devTools: true,
       },
+    });
+
+    // Handle F12 manually to open detached DevTools (prevents ghost window issues)
+    this.mainWindow.webContents.on('before-input-event', (event, input) => {
+      if (input.key === 'F12' && input.type === 'keyDown') {
+        event.preventDefault();
+        if (this.mainWindow?.webContents.isDevToolsOpened()) {
+          this.mainWindow.webContents.closeDevTools();
+        } else {
+          this.mainWindow?.webContents.openDevTools({ mode: 'detach' });
+        }
+      }
     });
 
     // Clipboard history window
