@@ -56,7 +56,3 @@ npm run dist
 - **React** - UI framework
 - **TypeScript** - Type safety
 - **Vite** - Fast bundling
-
-## License
-
-MIT © [Monish Gosar](https://github.com/MonishGosar)
