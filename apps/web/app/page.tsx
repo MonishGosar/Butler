@@ -7,7 +7,10 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-xl z-50">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="font-bold text-xl tracking-tight">Butler</div>
+          <div className="flex items-center gap-3">
+            <Image src="/logo_2.png" alt="Butler Logo" width={40} height={40} className="rounded-lg bg-white p-1" />
+            <span className="font-bold text-xl tracking-tight">Butler</span>
+          </div>
           <div className="flex gap-6 text-sm text-gray-400">
             <Link href="#features" className="hover:text-white transition-colors">Features</Link>
             <Link href="#shortcuts" className="hover:text-white transition-colors">Shortcuts</Link>
@@ -19,6 +22,13 @@ export default function Home() {
       {/* Hero Section */}
       <main className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Logo centered */}
+          <div className="flex justify-center mb-8">
+            <div className="p-4 bg-white rounded-3xl shadow-2xl shadow-white/20 ring-4 ring-white/20">
+              <Image src="/logo_2.png" alt="Butler" width={100} height={100} />
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-blue-400 mb-8 animate-fade-in">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
@@ -39,7 +49,9 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://github.com/MonishGosar/Butler/releases/latest"
+              href="https://github.com/MonishGosar/Butler/releases"
+              target="_blank"
+              rel="noopener noreferrer"
               className="h-12 px-8 rounded-full bg-white text-black font-semibold flex items-center gap-2 hover:bg-gray-100 transition-transform active:scale-95"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -49,17 +61,48 @@ export default function Home() {
             </a>
             <span className="text-sm text-gray-500">v1.0.1 • Free & Open Source</span>
           </div>
+
+          <p className="mt-4 text-xs text-gray-600">
+            Click Download → Go to Releases → Download <code className="bg-white/10 px-1 rounded">Butler.exe</code>
+          </p>
         </div>
 
-        {/* Preview Image */}
-        <div className="mt-20 max-w-5xl mx-auto rounded-xl border border-white/10 shadow-2xl shadow-blue-500/10 overflow-hidden bg-[#111]">
-          <div className="aspect-[16/6] min-w-full flex items-center justify-center bg-gradient-to-br from-gray-900 to-black relative">
-            {/* Abstract representation of launcher if no image */}
-            <div className="w-[600px] h-[56px] rounded-lg bg-[#202020] border border-white/5 shadow-2xl flex items-center px-4 gap-4">
-              <div className="w-5 h-5 rounded-full border-2 border-blue-500/50"></div>
-              <div className="h-4 w-32 bg-white/10 rounded"></div>
+        {/* Preview Image - Abstract representation */}
+        <div className="mt-20 max-w-4xl mx-auto rounded-2xl border border-white/10 shadow-2xl shadow-blue-500/10 overflow-hidden bg-gradient-to-br from-[#111] to-[#0a0a0a] p-8">
+          <div className="flex items-center justify-center">
+            <div className="w-full max-w-[550px] rounded-xl bg-[#1a1a1a] border border-white/10 shadow-2xl overflow-hidden">
+              {/* Search bar mockup */}
+              <div className="flex items-center gap-3 px-4 py-3 border-b border-white/5">
+                <svg className="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <span className="text-gray-400 text-sm">Type to search...</span>
+              </div>
+              {/* Results mockup */}
+              <div className="divide-y divide-white/5">
+                <div className="flex items-center gap-3 px-4 py-3 bg-blue-500/10">
+                  <div className="w-8 h-8 rounded bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-xs font-bold">N</div>
+                  <div>
+                    <div className="text-sm font-medium">Notepad</div>
+                    <div className="text-xs text-gray-500">Application</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 px-4 py-3">
+                  <div className="w-8 h-8 rounded bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center text-xs font-bold">C</div>
+                  <div>
+                    <div className="text-sm font-medium text-gray-300">Calculator</div>
+                    <div className="text-xs text-gray-500">Application</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 px-4 py-3">
+                  <div className="w-8 h-8 rounded bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-xs font-bold">P</div>
+                  <div>
+                    <div className="text-sm font-medium text-gray-300">PowerShell</div>
+                    <div className="text-xs text-gray-500">Application</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            {/* <Image src="/screenshot.png" width={1200} height={600} alt="Butler Interface" /> */}
           </div>
         </div>
       </main>
