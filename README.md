@@ -12,7 +12,7 @@
 
 ## ⚡ Quick Download
 
-**[➡️ Download Butler.exe](https://github.com/MonishGosar/Butler/releases/latest/download/Butler.exe)** (Portable - Just run it!)
+**[➡️ Download Butler.exe](https://github.com/MonishGosar/Butler/releases)** (Go to Releases → Download `Butler.exe`)
 
 Or visit the [Releases Page](https://github.com/MonishGosar/Butler/releases) for all versions.
 
