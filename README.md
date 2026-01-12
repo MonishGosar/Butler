@@ -2,7 +2,7 @@
 
 A fast, lightweight Windows launcher with instant search and clipboard management. Inspired by macOS Spotlight and Raycast.
 
-![Butler Screenshot](https://via.placeholder.com/600x100/1a1a1a/ffffff?text=Butler+Launcher)
+![Butler Screenshot](Screenshot 2026-01-10 235919.png)
 
 ## Features
 
