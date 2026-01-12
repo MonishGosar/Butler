@@ -92,11 +92,6 @@ npm run dist
 The built `Butler.exe` will be in `apps/desktop/release/win-unpacked/`.
 
 ---
-
-## 📄 License
-
-MIT © [Monish Gosar](https://github.com/MonishGosar)
-
 ---
 
 <div align="center">
