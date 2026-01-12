@@ -2,7 +2,7 @@
 
 A fast, lightweight Windows launcher with instant search and clipboard management. Inspired by macOS Spotlight and Raycast.
 
-![Butler Screenshot](Screenshot 2026-01-10 235919.png)
+![Butler Screenshot](Screenshot%202026-01-10%20235919.png)
 
 ## Features
 
