@@ -6,7 +6,6 @@
   **A fast, keyboard-first Windows launcher**
   
   [![Download](https://img.shields.io/badge/Download-Butler.exe-blue?style=for-the-badge)](https://github.com/MonishGosar/Butler/releases/latest/download/Butler.exe)
-  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 </div>
 
 ---
